@@ -1,0 +1,14 @@
+{
+    "name": "Football News Blocker",
+    "version": "1.0",
+    "description": "Blocks football \"news \" from your favorite news websites",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": ["https://*.publico.pt/*"],
+          "js": ["dist/contentScript.js"],
+          "run_at": "document_end",
+          "all_frames": true
+        }
+      ]
+  }
